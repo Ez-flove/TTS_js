@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Text to speech</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>Text To Speech</header>
+      <form action="#">
+        <div class="row">
+          <label>Nhập văn bản</label>
+          <textarea placeholder="Nhập văn bản tại đây..."></textarea>
+        </div>
+        <div class="row">
+          <label>Chọn một tệp văn bản</label>
+          <input type="file" id="myFile" name="filename" />
+        </div>
+        <div class="row">
+          <label>Giọng đọc</label>
+          <div class="outer">
+            <select>
+              <!-- <option value="">English - Giọng nữ UK</option>
+              <option value="">English - Giọng nam US</option>
+              <option value="" selected>Miền Bắc - Giọng nữ Việt Nam</option>
+              <option value="">Miền Bắc - Giọng nam Việt Nam</option>
+              <option value="">Miền Nam - Giọng nam Việt Nam</option>
+              <option value="">Miền Nam - Giọng nữ Việt Nam</option> -->
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <label>Tốc độ</label>
+          <div class="outer">
+            <select>
+              <option value="">0.25x</option>
+              <option value="">0.75x</option>
+              <option value="" selected>1x</option>
+              <option value="">1.5x</option>
+            </select>
+          </div>
+        </div>
+        <audio controls class="w-full">
+          <source src="#" type="audio/wav" />
+        </audio>
+        <button>Chuyển sang âm thanh</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
